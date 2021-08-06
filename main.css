@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+:root {
+  --clr-website-bg: hsl(233, 49%, 7%);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--clr-website-bg);
+  color: white;
+  font-family: var(--font-ff-inter);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background: var(--clr-primary-dark-desaturated-blue);
+  background-size: contain;
+  padding: 1.5rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+:root {
+  --clr-card-bg: hsl(244, 38%, 16%);
+  --clr-image-overlay: hsl(277, 64%, 61%, 0.90);
+}
+
+:root {
+  --clr-main-heading: hsl(0, 0%, 100%);
+  --clr-stat-value: hsl(0, 0%, 100%);
+  --clr-paragraph: hsl(0, 0%, 100%, 0.75);
+  --clr-stat-header: hsl(0, 0%, 100%, 0.60);
+  --clr-header-accent: hsl(277, 64%, 61%);
+}
+
+:root {
+  --font-ff-inter: "Inter", sans-serif;
+  --font-ff-lexend-deca: "Lexend Deca", sans-serif;
+  --font-fw-regular: 400;
+  --font-fw-bold: 700;
+}
+
+.card {
+  background: var(--clr-card-bg);
+  color: var(--clr-paragraph);
+  text-align: center;
+  margin: 88px 24px;
+}
+.card__image {
+  background: url(images/image-header-mobile.jpg) var(--clr-image-overlay);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 240px;
+  margin-bottom: 40px;
+}
+.card__header {
+  font-size: 28px;
+  font-weight: var(--font-fw-bold);
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+.card__header--accent {
+  color: var(--clr-header-accent);
+}
+.card__intro {
+  font-size: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  line-height: 25px;
+  margin-bottom: 43px;
+}
+.card__stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__stat {
+  font-size: 24px;
+  font-weight: var(--font-fw-bold);
+}
+.card__stat--heading {
+  font-size: 13px;
+  font-weight: var(--font-fw-regular);
+  display: block;
+  text-transform: uppercase;
+}
+.card__stat#stat__companies {
+  margin-bottom: 30px;
+}
+.card__stat#stat__templates {
+  margin-bottom: 32px;
+}
+.card__stat#stat__queries {
+  margin-bottom: 38px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    margin: 176px 164px;
+    display: grid;
+    grid-template-areas: "header image" "intro image" "stats image";
+    text-align: left;
+    max-width: 1113px;
+  }
+  .card__header, .card__intro {
+    margin-left: 73px;
+  }
+  .card__header {
+    grid-area: header;
+    max-width: 425px;
+    margin-top: 72px;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: normal;
+  }
+  .card__intro {
+    grid-area: intro;
+    max-width: 352px;
+    margin-bottom: 74px;
+  }
+  .card__stats {
+    grid-area: stats;
+    flex-direction: row;
+    margin-left: 63px;
+    margin-bottom: 66px;
+  }
+  .card__stat {
+    line-height: 25px;
+  }
+  .card__stat--heading {
+    font-family: var(--font-ff-lexend-deca);
+    line-height: normal;
+    margin-top: 4px;
+  }
+  .card__stat#stat__companies {
+    margin-right: 49px;
+    margin-bottom: 0px;
+  }
+  .card__stat#stat__templates {
+    margin-right: 57px;
+    margin-bottom: 0px;
+  }
+  .card__stat#stat__queries {
+    margin-bottom: 0px;
+  }
+  .card__image {
+    grid-area: image;
+    background: url(images/image-header-desktop.jpg) var(--clr-image-overlay);
+    width: 540px;
+    height: 100%;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
