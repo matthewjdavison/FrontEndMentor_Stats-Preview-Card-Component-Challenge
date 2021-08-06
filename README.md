@@ -27,11 +27,11 @@ Users should be able to:
 
 #### Mobile Version
 
-![Mobile Version](design\mobile-final.png)
+![Mobile Version](design/mobile-final.png)
 
 #### Desktop Version
 
-![Desktop Version](design\desktop-final.png)
+![Desktop Version](design/desktop-final.png)
 
 ### Links
 
