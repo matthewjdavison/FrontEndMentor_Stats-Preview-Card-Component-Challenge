@@ -22,7 +22,7 @@
     background: var(--clr-card-bg);
     color: var(--clr-paragraph);
     text-align: center;
-    margin: 88px 24px;
+    // margin: 88px 24px;
     &__image {  
         background: url(images/image-header-mobile.jpg) var(--clr-image-overlay);
         background-blend-mode: multiply;
@@ -76,7 +76,7 @@
 
 @media screen and (min-width: 1440px) {
     .card {
-        margin: 176px 164px;
+        // margin: 176px 164px;
         display:grid;
         grid-template-areas: 
         "header image"

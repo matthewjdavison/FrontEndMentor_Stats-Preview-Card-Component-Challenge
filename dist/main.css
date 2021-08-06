@@ -12,18 +12,25 @@ body {
   background: var(--clr-website-bg);
   color: white;
   font-family: var(--font-ff-inter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .attribution {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
   font-size: 11px;
   text-align: center;
-  background: var(--clr-primary-dark-desaturated-blue);
-  background-size: contain;
-  padding: 1.5rem;
+  padding: 1.25rem;
+  background: var(--clr-card-bg);
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #d4abed;
 }
 
 :root {
@@ -50,7 +57,6 @@ body {
   background: var(--clr-card-bg);
   color: var(--clr-paragraph);
   text-align: center;
-  margin: 88px 24px;
 }
 .card__image {
   background: url(images/image-header-mobile.jpg) var(--clr-image-overlay);
@@ -104,7 +110,6 @@ body {
 
 @media screen and (min-width: 1440px) {
   .card {
-    margin: 176px 164px;
     display: grid;
     grid-template-areas: "header image" "intro image" "stats image";
     text-align: left;
