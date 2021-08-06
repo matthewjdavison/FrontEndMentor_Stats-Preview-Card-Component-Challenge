@@ -1,0 +1,115 @@
+.card {
+    margin: 80px 32px;
+    background: var(--clr-primary-dark-desaturated-blue);
+    text-align: center;
+    border-radius: 8px;
+    padding-bottom: 32px;
+}
+.card__image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    &--image {
+        width: 100%;
+        display: block;
+    }
+    &--overlay{
+        position: absolute;
+        top: 0;
+        background: var(--clr-primary-soft-violet);
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
+}
+.card__header{
+    margin-top: 2rem;
+    font-size: 22.5px;
+    color: var(--clr-neutral-white);
+    padding: 0 48px;
+    font-family: var(--font-ff-inter);
+    font-weight: var(--font-fw-bold);
+
+    &--accent {
+        color: var(--clr-primary-soft-violet);
+    }
+}
+.card__intro {
+    margin-top: 24px;
+    padding: 0 24px;
+    line-height: 22px;
+    font-size: 15px;
+    font-family: var(--font-ff-inter);
+    font-weight: var(--font-fw-regular);
+}
+
+.card__stats{
+    margin-top: 16px;
+    list-style: none;    
+    display:flex; 
+    flex-direction: column;
+
+    .card__stat {
+        text-transform: uppercase;
+        font-family: var(--font-ff-lexend-deca);
+        font-weight: var(--font-fw-regular);
+        font-size: 12px;
+        padding-bottom: 24px;
+        color: var(--clr-neutral-white-75);
+
+        &:last-of-type{
+            padding-bottom: 0;
+        }
+        .stat {
+            display: block;
+            font-size: 18.75px;
+            font-family: var(--font-ff-inter);
+            font-weight: var(--font-fw-bold);
+            text-transform: none;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .card {
+        margin: 128px;
+        padding-left: 64px;
+        display: grid;
+        width: 1184px;
+        grid-auto-flow: row;
+        grid-template-areas: 
+        "header img"
+        "intro img"
+        "stats img";
+    }
+    .card__header {
+        grid-area: header;
+        padding-left: 0;
+        text-align: left;
+    }
+    .card__intro {
+        grid-area: intro;
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
+        width: 509px;
+    }
+    .card__stats {
+        grid-area: stats;       
+        flex-direction: row; 
+        
+
+        .card__stat {
+            padding-bottom: 0px;        
+            padding-right: 24px;
+        }
+    }
+    .card__image {
+        grid-area: img;
+
+    }
+
+}

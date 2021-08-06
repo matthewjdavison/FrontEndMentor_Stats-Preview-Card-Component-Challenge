@@ -1,0 +1,25 @@
+:root {
+    --clr-website-bg: hsl(233, 49%, 7%);
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--clr-website-bg);
+    color: white;
+    font-family: var(--font-ff-inter);
+}
+h1,h2,h3,h4,h5,h6,p {
+    
+}
+.attribution {
+    font-size: 11px; text-align: center;
+    background: var(--clr-primary-dark-desaturated-blue);
+    background-size: contain;
+    padding: 1.5rem;
+}
+.attribution a 
+{
+    color: hsl(228, 45%, 44%); 
+}

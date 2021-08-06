@@ -1,0 +1,20 @@
+body {
+    background: var(--clr-primary-very-dark-blue);
+    color: var(--clr-neutral-white-60);
+    
+}
+body, h2, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+.attribution {
+    font-size: 11px; text-align: center;
+    background: var(--clr-primary-dark-desaturated-blue);
+    padding: 1.5rem;
+}
+.attribution a 
+{
+    color: hsl(228, 45%, 44%); 
+}

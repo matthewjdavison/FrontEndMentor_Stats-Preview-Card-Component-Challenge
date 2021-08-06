@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+// ### Body Copy
+
+// - Font size: 15px
+
+// ### Font
+
+// - Family: [Inter](https://fonts.google.com/specimen/Inter)
+// - Weights: 400, 700
+
+// - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+// - Weights: 400
+
+:root {
+    --font-fs-body: 15px;
+}
+
+:root {
+    --font-ff-inter: 'Inter', sans-serif;
+    --font-ff-lexend-deca: 'Lexend Deca', sans-serif;
+}
+:root {
+    --font-fw-regular: 400;
+    --font-fw-bold: 700;
+}
