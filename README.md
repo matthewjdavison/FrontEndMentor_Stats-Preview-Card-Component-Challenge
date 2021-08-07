@@ -69,5 +69,5 @@ To see how you can add code snippets, see below:
 ## Author
 
 - Website - [Matthew Davison](https://matthewdavison.netlify.app/)
-- Frontend Mentor - [@matthewjdavison](hhttps://www.frontendmentor.io/profile/matthewjdavison)
+- Frontend Mentor - [@matthewjdavison](https://www.frontendmentor.io/profile/matthewjdavison)
 - Twitter - [@mattdavisonuk](https://www.twitter.com/mattdavisonuk)
